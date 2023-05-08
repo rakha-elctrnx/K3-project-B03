@@ -1,6 +1,7 @@
 @import url('https://fonts.cdnfonts.com/css/cocogoose');
 @import url('https://fonts.googleapis.com/css2?family=Actor&display=swap');
 @import url('https://fonts.cdnfonts.com/css/coolvetica');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
 
 :root {
     --primary-color: #0080FF;
@@ -18,7 +19,7 @@ a {
     text-decoration: none;
 }
 
-/* Landing Page */
+/* ------------------------------------------------------------------ Landing Page --------------------------------------------------------------------------- */
 header {
     display: flex;
     justify-content: flex-end;
@@ -26,7 +27,11 @@ header {
     padding: 25px 100px;
     background-color: var(--primary-color);
     box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.4);
-    position: relative;
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+    z-index: 999;
 }
 
 .logo {
@@ -52,7 +57,6 @@ header {
 
 .container {
     background-color: var(--background-color);
-    display: flex;
     align-items: center;
     justify-content: flex-end;
     padding: 10px 100px;
@@ -60,16 +64,20 @@ header {
 
 .card {
     background-color: white;
-    margin: 50px auto;
-    text-align: center;
-    align-items: center;
-    padding: 100px 250px;
     border-radius: 30px 30px 30px 30px;
-    border-top: 10px solid #87CEEB;
-    /* box-shadow: inset 0px 10px 0px 0px rgba(135, 206, 235, 1); */
     box-shadow: -10px -10px 15px rgba(255,255,255,0.5),
     10px 10px 15px rgba(70,70,70,0.20);
     /* margin: 50px; */
+}
+
+.minerva-card {
+    border-top: 10px solid #87CEEB;
+    margin: 0 auto;
+    margin-top: 100px;
+    text-align: center;
+    align-items: center;
+    padding: 100px 250px;
+
 }
 
 .title {
@@ -125,11 +133,9 @@ header {
     border-bottom: 4px solid #C4C4C4;
 }
 
-.gabung-btn {
+.btn {
     width: 300px;
     height: 70px;
-    margin-top: 50px;
-    margin-right: 20px;
     border-radius: 20px 20px 20px 20px;
     border: 0;
     background-color: var(--primary-color);
@@ -141,4 +147,287 @@ header {
 
 .btn:hover {
     background-color: #1b5885;
+}
+
+.divider {
+    border-top: 4px solid #DCDCDC;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.price-card {
+    display: flex;
+    margin-bottom: 40px;
+}
+
+.price-card div {
+    display: inline-block;
+}
+
+.price-card .image {
+    width: 50%;
+}
+
+.price-card .desc {
+    padding: 70px 80px;
+    color: var(--secondary-color);
+    width: 50%;
+}
+
+.price-card div img {
+    width: 100%;
+    border-radius: 30px 30px 30px 30px;
+}
+
+.price-card .desc span {
+    font-family: 'COCOGOOSE', sans-serif;
+    font-size: 30px;
+}
+
+.price-card .desc ul {
+    list-style-image: url('images/check.png');
+}
+
+.price-card .desc ul li {
+    padding: 5px;
+}
+
+.price-card .desc .benefit {
+    width: 70%;
+    margin-top: 30px;
+    margin-left: 20px;
+    font-family: 'COCOGOOSE', sans-serif;
+    font-size: 15px;
+}
+
+.minerva-class {
+    margin: 0 auto;
+    text-align: center;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+.minerva-class .title {
+    font-family: 'COCOGOOSE', sans-serif;
+    color: var(--secondary-color);
+    font-size: 50px;
+}
+
+.minerva-class .section-class {
+    margin-top: 10px;
+}
+
+.minerva-class .section-class .items {
+    display: inline-block;
+    height: 380px;
+    width: 380px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    background-color: #C4C4C4;
+    border-radius: 30px 30px 30px 30px;
+    box-shadow: -10px -10px 15px rgba(255,255,255,0.5),
+    10px 10px 15px rgba(70,70,70,0.20);
+}
+
+.minerva-class .section-class .items .mt-card {
+    height: 50%;
+}
+
+.minerva-class .section-class .items .sub-card {
+    background-color: white;
+    border-radius: 30px 30px 30px 30px;
+    height: 50%;
+}
+
+.minerva-class .section-class .items .sub-card div {
+    height: 40%;
+    padding-top: 8%;
+    font-family: 'COCOGOOSE', sans-serif;
+    font-size: 25px;
+}
+
+.minerva-class .section-class .items .sub-card button {
+    height: 30%;
+    width: 70%;
+    border: 0;
+    font-family: 'COCOGOOSE', sans-serif;
+    font-size: 20px;
+    background-color: var(--primary-color);
+    color: white;
+    border-radius: 15px 15px 15px 15px;
+    cursor: pointer;
+}
+
+.minerva-class .section-class .items .sub-card button:hover {
+    background-color: #1b5885;
+}
+
+.testimoni {
+    background-color: var(--primary-color);
+    left: 0;
+    right: 0;
+    position: absolute;
+    justify-content: center;
+    padding: 25px 5%;
+}
+
+.testimoni .title {
+    font-family: 'COCOGOOSE', sans-serif;
+    font-size: 40px;
+    color: white;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    text-align: center;
+    
+}
+
+.testimoni-card {
+    width: 50%;
+    background-color: white;
+    display: flex;
+    border-radius: 15px 15px 15px 15px;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.testimoni-card div {
+    display: inline-block;
+}
+
+.testimoni-card .image {
+    width: 40%;
+    text-align: center;
+    padding: 40px 40px;
+    background-color: #D3D3D3;
+    border-radius: 15px 15px 15px 15px;
+}
+
+.testimoni-card .desc {
+    padding: 70px 30px;
+    width: 55%;
+    color: var(--secondary-color);
+}
+
+.bullet {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.bullet div {
+    display: inline;
+}
+
+.contact {
+    left: 0;
+    right: 0;
+    position:absolute;
+    margin-top: 510px;
+    padding: 25px 5%;
+    display: flex;
+    color: var(--secondary-color);
+}
+
+.contact .parent {
+    display: inline-block;
+    width: 50%;
+    padding: 40px 30px;
+    margin-bottom: 30px;
+}
+
+.contact .side-kiri {
+    text-align: right;
+    display: block;
+}
+
+.contact .side-kiri p {
+    margin-left: 30%;
+    width: 70%;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    font-family: 'Actor', sans-serif;
+}
+
+.contact .side-kiri .child-1 {
+    font-family: 'COCOGOOSE', sans-serif;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.contact .side-kiri .child-2 {
+    font-family: 'Coolvetica', sans-serif;
+    font-size: 20px;
+}
+
+.contact .side-kanan .child-1 {
+    font-family: 'COCOGOOSE', sans-serif;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.contact .side-kanan .kontak {
+    padding: 5px 0px;
+    font-family: 'COCOGOOSE', sans-serif;
+    font-size: 20px;
+}
+
+.contact .side-kanan .kontak span {
+    font-family: 'Coolvetica', sans-serif;
+    font-size: 25px;
+}
+
+.btn-container {
+    width: 25%;
+    margin-top: 10px;
+}
+
+.contact .side-kanan .contact-btn {
+    width: 100%;
+    margin-top: 10px;
+    font-family: 'COCOGOOSE', sans-serif;
+    font-size: 15px;
+    padding: 8px;
+    border-radius: 15px 15px 15px 15px;
+    border: 2px solid var(--primary-color);
+    cursor: pointer;
+}
+
+.contact .side-kanan .btn-1 {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.contact .side-kanan .btn-1:hover {
+    background-color: #1b5885;
+}
+
+.contact .side-kanan .btn-2 {
+    background-color: var(--background-color);
+    color: var(--primary-color);
+}
+
+.contact .side-kanan .btn-2:hover {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.contact .side-kanan .child-2 {
+    text-align: center;
+    margin-top: 7px;
+    font-family: 'COCOGOOSE', sans-serif;
+    color: #A9A9A9;
+    font-size: 15px;
+}
+
+.copyright {
+    border-top: 2px solid #A9A9A9;;
+    margin-top: 1100px;
+    position: relative;
+    color: var(--secondary-color);
+    font-family: 'Coolvetica', sans-serif;
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 20px;
+    padding-top: 20px;
 }
