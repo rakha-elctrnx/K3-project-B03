@@ -9,105 +9,36 @@
 
     <style>
        
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            
-        }
-        nav {
-            
-            width: 100%;
-            height: 64px;
-            padding: 18px 70px;
-            background-color: #0080FF;
-        }
-
-        .navbar {
-            width: 100%;
-            height: 75px;
-            
-            /* display: inline; */
-        }
-
-        .navbar-nav {
-
-            display: inline;
-            padding: 23px 80px;
-            /* margin-right: 80px; */
-            color: #FFFFFF;
-            text-decoration: none;
-        }
-
-        .c-login {
-            position: absolute;
-            width: 584px;
-            height: 538px;
-            left: 450px;
-            top: 102px;
-            background: #FFFFFF;
-            box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.25);
-            border-radius: 15px;
-        }
-
-        h1 {
-            margin-top: 49px;
-            color: black;
-            text-align: center;
-            font-family: Arial, Helvetica, sans-serif;
-            font-size: 48px;
-        }
-
-        p {
-            margin: 9px;
-            text-align: center;
-            font-family: Arial, Helvetica, sans-serif;
-            font-size: 18px;
-            color: black;
-        }
-
-        .login {
-            padding: 179 px 218px;
-        }
-
-        .form-username {
-            height: 30px;
-            margin: 45px 208px;
-            text-align: center;
-        }
-
-        .form-password {
-            height: 30px;
-            margin: 33px 208px;
-            text-align: center;
-        }
-
-        input:focus {
-            outline: none;
-        }
+        
     </style>
 </head>
 <body>
     <nav>
         <a class="navbar" href="index.html"><img src="../assets/images/logo.png" alt=""></a>
-        <div class="navbar-nav">
-            <a href="index.html">Home</a>
-            <a href="register.html">Daftar</a>
-        </div>
-        
+        <ul class="link-nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="register.html">Daftar</a></li>
+        </ul>         
     </nav>
     <div class="c-login">
-        <h1>Masuk</h1>
-        <p>masuk terlebih dahulu</p>
+        <div class="masuk">Masuk</div>
+        <div class="masuk1">masuk terlebih dahulu</div>
         <form class="login">
-            <div>
+            <div class="input">
                 <input type="text" class="form-username" id="email" placeholder="username">
-            </div>
-            <div>
+                <hr>
                 <input type="text" class="form-password" id="email" placeholder="password">
-            </div>
+            </div> 
         </form>
-        
+
+        <div class="b-masuk">
+            <button class="btn-1">Masuk</button>
+        </div>
+        <div class="or"><p>or</p></div>  
+        <div class="b-google">
+            <button class="btn-2">Google</button>
+        </div>
+        <div class="daftarkan">belum punya akun? <a href="register.html">daftar</a></div>
     </div>
     
 </body>
