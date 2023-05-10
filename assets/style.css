@@ -433,7 +433,7 @@ header {
     padding-top: 20px;
 }
 
-/* ------------------------------------------------------------------ Landing Page --------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------ Login Page --------------------------------------------------------------------------- */
 * {
     margin: 0;
     padding: 0;
@@ -495,7 +495,7 @@ body {
 
 .masuk {
     padding-top: 20px;
-    color: black;
+    color: #333333;
     text-align: center;
     font-family: 'COCOGOOSE', sans-serif;
     font-weight: 400px;
@@ -508,7 +508,7 @@ body {
     font-family: 'Cocogoose Pro', sans-serif;
     font-weight: 250px;
     font-size: 18px;
-    color: black;
+    color: #333333;
 }
 
 .input {
