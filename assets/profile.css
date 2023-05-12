@@ -1,0 +1,198 @@
+
+@import url('https://fonts.cdnfonts.com/css/cocogoose');
+@import url('https://fonts.googleapis.com/css2?family=Actor&display=swap');
+@import url('https://fonts.cdnfonts.com/css/coolvetica');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+@import url('https://fonts.cdnfonts.com/css/cocogoose-pro?styles=17437,17444,17446,17442');
+
+:root {
+    --primary-color: #0080FF;
+    --secondary-color: #333333;
+    --background-color: #ECECEC;
+}
+
+* {
+    /* box-sizing: border-box; */
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 25px 100px;
+    background-color: var(--primary-color);
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.4);
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+    z-index: 999;
+}
+
+.logo {
+    cursor: pointer;
+    margin-right: auto;
+}
+
+.nav-links li {
+    display: inline-block;
+    padding: 0px 20px;
+    list-style: none;
+}
+
+.nav-links li a {
+    transition: all 0.3s ease 0s;
+    color: #FFFFFF;
+    font-family: 'COCOGOOSE', sans-serif;
+}
+
+.nav-links li a:hover {
+    color: var(--secondary-color);
+}
+ul {
+    list-style-type: none;
+  }
+
+.profile-card{
+    width: 584px;
+    height: 437px;
+    margin: 200px auto;
+    text-align: center;
+    background: #FFFFFF;
+    box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+
+}
+.poto-profile{
+    width: 194px;
+    height: 194px;
+    background: #E6E6E6;
+    border: 4px solid #FFFFFF;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.15);
+    position: absolute;
+    top: 185px;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+
+ 
+}
+.bul1{
+    width: 61px;
+    height: 61px;
+    margin: 35px auto;
+    background: #FFFFFF;
+    border-radius: 50%;
+    
+}
+span{
+    width: 150px;
+    height: 24px;
+    margin: auto;
+    font-family: 'Cocogoose';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 34px;
+    color: #333333;
+    position: relative;
+    top: 100px;
+}
+.select-kls{
+    position: relative;
+    margin: 140px auto;
+    margin-bottom: 0;
+    text-align: center;
+}
+.kelas{
+    width: 315px;
+    height: 63px;
+    text-align: center;
+    border: 2px solid #0080FF;
+    border-radius: 15px;
+    box-sizing: border-box;
+    font-family: 'Cocogoose';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+    color: #0080FF;
+    appearance: none;
+    position: relative;
+}
+.icon-selector{
+    content: '\25BC';
+    right: 25px;
+    width: 10px;
+    height: 10px;
+    background: #0080FF;
+    position: relative;
+    display: inline-block;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    transform: rotate(-180deg);
+}
+
+.time li{
+    display: inline-block;
+}
+.waktu{
+    text-align: center;
+    margin: 10px auto;
+    align-items: center;
+
+}
+.jam {
+    width: 83px;
+    height: 63px;
+    text-align: center;
+    border: 2px solid #0080FF;
+    border-radius: 15px;
+    box-sizing: border-box;
+    /* margin-right: 13px; */
+    appearance: none;
+    font-family: 'Cocogoose';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #0080FF;
+
+}
+.hari {
+    width: 213px;
+    height: 63px;
+    text-align: center;
+    border: 2px solid #0080FF;
+    border-radius: 15px;
+    box-sizing: border-box;
+    appearance: none;
+    font-family: 'Cocogoose';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #0080FF;
+
+}
+.pesan{
+    width: 315px;
+    height: 63px;
+    font-family: 'Cocogoose';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+    margin: auto;
+    color: #FFFFFF;
+    background: #0080FF;
+    border-radius: 15px;
+    transform: translateX(-5px);
+    margin: 10px auto;
+}
