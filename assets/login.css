@@ -41,7 +41,7 @@ body {
 
 .c-login {
     width: 584px;
-    height: 538px;
+    height: 545px;
     margin: 57px auto;
     background: #FFFFFF;
     box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.25);
@@ -178,4 +178,9 @@ hr {
     font-size: 13px;
     font-family: 'COCOGOOSE', sans-serif;
     text-align: center;
+    color: #0080FF;
+}
+
+hr {
+    border: 2px solid #C4C4C4;
 }
