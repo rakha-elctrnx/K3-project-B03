@@ -34,7 +34,7 @@ nav {
     color: #FFFFFF;
     text-decoration: none;
 }
-
+/* profile card                      */
 .profile-card{
     width: 584px;
     height: 437px;
@@ -57,8 +57,10 @@ nav {
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     border-radius: 50%;
-
  
+}
+.profile-card ul li{
+    list-style-type: none;
 }
 
 .bul1 img{
