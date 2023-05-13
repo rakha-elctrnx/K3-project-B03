@@ -4,8 +4,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
 @import url('https://fonts.cdnfonts.com/css/cocogoose-pro?styles=17437,17444,17446,17442');
 
-
-
 /* ------------------------------------------------------------------ Login Page --------------------------------------------------------------------------- */
 * {
     margin: 0;
@@ -134,6 +132,10 @@ hr {
     cursor: pointer;
 }
 
+.btn-1:hover {
+    background-color: #1b5885;
+}
+
 .b-google {
     margin: 4px auto 20px;
     cursor: pointer;
@@ -150,6 +152,11 @@ hr {
     color: #0080FF;
     text-align: center;
     cursor: pointer;
+}
+
+.btn-2:hover {
+    background-color: #0080FF;
+    color: #FFFFFF;
 }
 
 .or {
